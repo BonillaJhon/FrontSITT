@@ -1,0 +1,136 @@
+.dashboard-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  .profile-section {
+    margin-bottom: 30px;
+  }
+  
+  .profile-details p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .tasks-section {
+    margin-bottom: 30px;
+  }
+  
+  .tasks-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .task-details p {
+    margin: 0;
+  }
+  
+  .task-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .task-description {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .task-actions button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .btn-delete {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-delete:hover {
+    background-color: #c0392b;
+  }
+  
+  .btn-complete {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-complete:hover {
+    background-color: #27ae60;
+  }
+  
+  .nueva-tarea {
+    margin-top: 30px;
+  }
+  
+  .task-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-task-name,
+  .textarea-task-description {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .input-task-name {
+    font-size: 16px;
+  }
+  
+  .textarea-task-description {
+    font-size: 14px;
+    height: 80px;
+    resize: none;
+  }
+  
+  .btn-add-task {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-add-task:hover {
+    background-color: #2980b9;
+  }
+  
+  .no-tasks-message {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+  }
+  

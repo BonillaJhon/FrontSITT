@@ -1,0 +1,30 @@
+<div class="login-container">
+  <div class="login-card">
+    <h2 class="login-title">Login</h2>
+    <form #loginForm="ngForm" (ngSubmit)="login()">
+      <div class="input-group">
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Usuario"
+          ngModel
+          required
+          class="login-input"
+        />
+      </div>
+      <div class="input-group">
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Contraseña"
+          ngModel
+          required
+          class="login-input"
+        />
+      </div>
+      <button type="submit" class="login-button">Ingresar</button>
+    </form>
+  </div>
+</div>

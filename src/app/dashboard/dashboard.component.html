@@ -1,0 +1,36 @@
+<div class="container">
+  <h1>Dashboard de Tareas</h1>
+
+  <!-- Sección de perfil de usuario -->
+  <div *ngIf="userProfile">
+    <h2>Perfil del Usuario</h2>
+    <p><strong>Nombre:</strong> {{ userProfile.nombre }}</p>
+    <p><strong>Email:</strong> {{ userProfile.email }}</p>
+  </div>
+
+  <!-- Sección para mostrar el listado de tareas -->
+  <div *ngIf="tareas.length > 0">
+    <h2>Tareas</h2>
+    <ul>
+      <li *ngFor="let tarea of tareas">
+        <p><strong>{{ tarea.nombre }}</strong></p>
+        <p>{{ tarea.descripcion }}</p>
+        <p><strong>Completado:</strong> {{ tarea.completado ? 'Sí' : 'No' }}</p>
+        <button (click)="eliminarTarea(tarea.id)">Eliminar</button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Sección para agregar una nueva tarea -->
+  <div class="nueva-tarea">
+    <h2>Agregar Nueva Tarea</h2>
+    <input type="text" placeholder="Nombre de la tarea" #nombreTarea>
+    <textarea placeholder="Descripción" #descripcionTarea></textarea>
+    <button (click)="agregarTarea(nombreTarea.value, descripcionTarea.value)">Agregar Tarea</button>
+  </div>
+
+  <!-- Mensaje en caso de que no haya tareas -->
+  <div *ngIf="tareas.length === 0">
+    <p>No tienes tareas asignadas.</p>
+  </div>
+</div>
